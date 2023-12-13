@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Tourism</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" hreh="./travel.css">
+    <!-- <link rel="stylesheet" href="./travel.css"> -->
 </head>
 <body>
    
   <!-- ------------nav ------------- -->
   <nav class="navbar navbar-expand-lg bg-dark fixed-top">
     <div class="container-fluid">
-      <a class="float-left" href="chome.php">
+      <a class="float-left" href="login.html">
         <img src="../logo.png" class="float-left mr-2 moblogo" alt="Logo" style="height:50px;">
     </a>
       <a class="navbar-brand text-warning fw-bold" href="#"><p class="fs-2">KERALA TRAVEL TOURISM</p></a>
@@ -46,10 +46,51 @@
             </form>
     </div>
   </nav>
-  <br><br><br>
-  <!-- ---------------nav------------------ -->
+  <br><br><br><br><br><br><br>
+  <!-- ---------------nav ends------------------ -->
 
+  <main class="my-form">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header border border-dark" style="background-color:#292b2c">
+                        <h4 style="font-style:bold;color:goldenrod;text-align:left">Login</h4>
+                    </div>
+                    <div class="card-body border border-dark">
+                        <form name="my-form" action="login.html" method="post">
 
+                            <div class="form-group row">
+                                <label for="username" class="col-md-4 col-form-label text-md-right  "><b><i class="fas fa-pen-alt mr-2"></i>User Name</b></label>
+                                <div class="col-md-6">
+                                    <input type="text" id="username" class="form-control border border-dark" name="username" placeholder="Username" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="p1" class="col-md-4 col-form-label text-md-right"><b><i class="fas fa-lock mr-2"></i>Password</b></label>
+                                <div class="col-md-6">
+                                    <input id="p1" class="form-control border border-dark" type="password" name="password" placeholder="Password" required>
+                                </div>
+                            </div><br>
+
+                            <div class="col-md-6 offset-md-4">
+                                <button type="submit" class="btn " style="background-color:#292b2c;color:goldenrod" name="login" value="Login">
+                                    Login
+                                </button>
+                            </div>
+                            <br>
+                            <div class="col-md-6 offset-md-4">
+                                <label id="createaccount"><a id='link' href="signup.html"><b style="color:black"> Create a new account</b></a></label>
+                                <br>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
 
 
 
